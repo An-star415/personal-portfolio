@@ -1,32 +1,49 @@
-# React + TypeScript + Vite
+# Personal Portfolio Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+A modern, responsive personal developer portfolio showcasing technical projects, skill proficiencies, and contact information. Built with **React**, **TypeScript**, **Tailwind CSS**, and backed by **Supabase** for secure contact form handling.
 
-Currently, two official plugins are available:
+**Live Demo:** [https://ananyaghosh-portfolio.vercel.app/](https://ananyaghosh-portfolio.vercel.app/)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+## 🚀 Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **Responsive Design:** Optimized for all screen sizes (mobile, tablet, and desktop).
+- **Interactive UI & Animations:** Smooth scrolling animations and modern card layouts.
+- **Projects Showcase:** Detailed cards featuring descriptions, tech stacks, live demo links, and GitHub repository links.
+- **Skills Matrix:** Categorized overview of languages, frameworks, developer tools, and core CS fundamentals.
+- **Contact Form & Backend:** Functional contact messaging system integrated with **Supabase** database and secured with **Row Level Security (RLS)**.
+- **Production Build Optimization:** Bundled with Vite for fast HMR and optimized static asset delivery.
 
-## Expanding the Oxlint configuration
+---
 
-If you are developing a production application, we recommend enabling type-aware lint rules by installing `oxlint-tsgolint` and editing `.oxlintrc.json`:
+## 🛠️ Tech Stack
 
-```json
-{
-  "$schema": "./node_modules/oxlint/configuration_schema.json",
-  "plugins": ["react", "typescript", "oxc"],
-  "options": {
-    "typeAware": true
-  },
-  "rules": {
-    "react/rules-of-hooks": "error",
-    "react/only-export-components": ["warn", { "allowConstantExport": true }]
-  }
-}
-```
+| Layer | Technology |
+|---|---|
+| **Frontend Framework** | React 18, TypeScript |
+| **Styling & UI** | Tailwind CSS, Lucide Icons |
+| **Build Tool & Bundler** | Vite |
+| **Backend & Database** | Supabase (PostgreSQL) |
+| **Hosting & CI/CD** | Vercel |
 
-See the [Oxlint rules documentation](https://oxc.rs/docs/guide/usage/linter/rules) for the full list of rules and categories.
+---
+
+## 📁 Project Structure
+
+```text
+├── public/                 # Static assets, icons, and CV/Resume
+├── src/
+│   ├── components/         # Modular UI sections (Hero, About, Projects, Skills, Contact, Footer, Navbar)
+│   ├── data/               # Dynamic project and profile content (content.ts)
+│   ├── hooks/              # Custom React hooks (e.g., scroll animations)
+│   ├── lib/                # Client configurations (Supabase initialization)
+│   ├── types/              # TypeScript interfaces and type definitions
+│   ├── App.tsx             # Main application component
+│   ├── main.tsx            # Application entry point
+│   └── index.css           # Global Tailwind and custom styles
+├── supabase/
+│   └── migrations/         # PostgreSQL schema and RLS policies
+├── .env.example            # Environment variable template
+├── tsconfig.json           # TypeScript configuration
+└── vite.config.ts          # Vite build configuration
