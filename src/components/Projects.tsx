@@ -47,7 +47,7 @@ export default function Projects() {
               Featured Work
             </h2>
             <p className="text-neutral-400 text-base md:text-lg max-w-2xl mx-auto">
-              A selection of projects I've built — from full-stack applications to focused tools.
+              A selection of projects I've built from full-stack applications to focused tools.
             </p>
           </div>
 
