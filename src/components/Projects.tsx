@@ -2,7 +2,6 @@ import { ExternalLink, Star } from 'lucide-react'
 import { FaGithub } from 'react-icons/fa'
 import { useScrollAnimation } from '../hooks/useScrollAnimation'
 
-// We removed the old import that was crashing the live server!
 const myProjects = [
   {
     id: 1,
